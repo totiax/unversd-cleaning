@@ -74,29 +74,33 @@ export default function Navbar() {
         </button>
       </div>
 
-      {open && (
-        <div className="lg:hidden bg-linen border-t border-teal/10">
+      <div
+        className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out ${
+          open ? "max-h-[500px] opacity-100" : "max-h-0 opacity-0"
+        }`}
+      >
+        <div className="bg-linen border-t border-teal/10">
           <div className="container-page py-4 flex flex-col gap-4">
             {links.map((l) => (
               <a
                 key={l.href}
                 href={l.href}
                 onClick={() => setOpen(false)}
-                className="text-base font-semibold text-ink/80"
+                className="text-base font-semibold text-ink/80 hover:text-teal transition-colors"
               >
                 {l.label}
               </a>
             ))}
             <a
               href="tel:+13858880341"
-              className="inline-flex items-center justify-center gap-2 rounded-full bg-teal text-linen px-5 py-3 text-sm font-bold"
+              className="inline-flex items-center justify-center gap-2 rounded-full bg-teal text-linen px-5 py-3 text-sm font-bold hover:bg-teal-dark transition-colors shadow-sm"
             >
               <Phone size={16} />
               Call or Text (385) 888-0341
             </a>
           </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }

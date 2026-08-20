@@ -27,17 +27,17 @@ const caveat = Caveat({
 export const metadata: Metadata = {
   title: "Unvers D. Cleaning | House & Office Cleaning in Orem, UT",
   description:
-    "Family-run house, apartment and office cleaning in Orem, Provo, Springville, American Fork & Lindon, Utah. Trusted by local families for 4+ years. Call or text (385) 888-0341.",
+    "Professional house, apartment and office cleaning in Orem, Utah & surrounding areas. Family-run, trusted by local families for 4+ years. Call or text (385) 888-0341.",
   keywords: [
     "house cleaning Orem Utah",
-    "cleaning service Utah County",
+    "cleaning service Orem Utah",
     "move-out cleaning Orem",
-    "office cleaning Provo",
+    "office cleaning Orem Utah",
   ],
   openGraph: {
     title: "Unvers D. Cleaning | Orem, UT",
     description:
-      "Family-run house, apartment and office cleaning across Utah County. 4+ years trusted by local families.",
+      "Professional cleaning services in Orem, Utah & surrounding areas. 4+ years trusted by local families.",
     locale: "en_US",
     type: "website",
   },
